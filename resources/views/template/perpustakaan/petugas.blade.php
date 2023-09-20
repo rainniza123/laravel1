@@ -7,7 +7,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="/book/store" method="POST">
+              <form action="/petugas/store" method="POST">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">

@@ -14,7 +14,7 @@
                   <label for="exampleInputEmail1">Nama Rak</label>
                     <input type="text" class="form-control" name="nama_rak" placeholder="Input Nama Rak">
                     <label for="exampleInputEmail1">Lokasi Rak</label>
-                    <input type="text" class="form-control" name="nama_rak" placeholder="Input Nama Rak ">
+                    <input type="text" class="form-control" name="nama_rak" placeholder="Input Lokasi Rak ">
                   </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
