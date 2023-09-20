@@ -35,7 +35,7 @@
                         <div class="card-header">
                             <h3 class="card-title">Data Petugas</h3>
                         </div>
-                        <a href="{{ route('petugas.create') }}" class="btn btn-small btn-warning">Create</a>
+                        <a href="{{ route('petugas.create') }}" class="btn btn-small btn-dark">Create</a>
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table id="example2" class="table table-bordered table-hover">

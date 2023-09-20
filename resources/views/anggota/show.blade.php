@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="content-wrapper">
-<div class="card card-danger">
+<div class="card card-info">
               <div class="card-header">
                 <h3 class="card-title">Form Detail Data Anggota</h3>
               </div>
@@ -27,7 +27,6 @@
                     <input type="text" class="form-control" name="nama" value="{{ $anggotas[0]->nama_anggota }}" disabled>
                         <label>Jenis Kelamin</label>
                         <select type="text" name="jk" class="form-control" value="{{ $anggotas[0]->jk_anggota }}" disabled>
-                          <option disabled selectdes>Jenis Kelamin</option>
                           <option value="L">Laki-Laki</option>
                           <option value="P">Perempuan</option>
                         </select>

@@ -55,7 +55,7 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                <button type="submit" class="btn btn-warning">Update</button>
+                <button type="submit" class="btn btn-primary">Update</button>
                 <a href="" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Kembali</a>
                 </div>
               </form>

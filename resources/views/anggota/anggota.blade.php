@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="content-wrapper">
-<div class="card card-success">
+<div class="card card-secondary">
               <div class="card-header">
                 <h3 class="card-title">Form Input Data Anggota</h3>
               </div>
@@ -12,7 +12,7 @@
               <form action="{{ route('anggota.store') }}" method="POST">
                 @csrf
               <div class="card-body">
-              <div class="card card-success">
+              <div class="card card-secondary">
               <div class="card-header">
                 <h3 class="card-title">Data Anggota</h3>
               </div>
@@ -23,8 +23,16 @@
                   <div class="form-group">
                     <label for="exampleInputEmail1">Kode Anggota</label>
                     <input type="text" class="form-control" name="kode" placeholder="Input Kode Anggota">
+                    @error('kode')
+                          <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+
                     <label for="exampleInputEmail1">Nama Anggota</label>
                     <input type="text" class="form-control" name="nama" placeholder="Input Nama Anggota">
+                    @error('nama')
+                          <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+
                         <label>Jenis Kelamin</label>
                         <select type="text" name="jk" class="form-control">
                           <option disabled selectdes>Jenis Kelamin</option>
@@ -47,14 +55,22 @@
                         </select>
                     <label for="exampleInputEmail1">No Telepon</label>
                     <input type="number" class="form-control" name="telp" placeholder="Input No Telp Anggota">
+                    @error('telp')
+                          <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+
                     <label for="exampleInputEmail1">Alamat Anggota</label>
                     <input type="text" class="form-control" name="alamat" placeholder="Input Alamat Anggota">
+                    @error('alamat')
+                          <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+
                   </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-warning">Submit</button>
-                  <button type="reset" class="btn btn-warning">Reset</button>
+                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="reset" class="btn btn-primary">Reset</button>
                   <a href="" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Kembali</a>
                 </div>
               </form>

@@ -35,7 +35,7 @@
               <div class="card-header">
                   <h3 class="card-title">Data Anggota</h3>
                 </div>
-                <a href="{{ route('anggota.create') }}" class="btn btn-small btn-warning">Create</a>
+                <a href="{{ route('anggota.create') }}" class="btn btn-small btn-dark">Create</a>
             <!-- /.card-header -->
             <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">
@@ -64,28 +64,12 @@
                         <td class="d-flex" style="gap:10px">
                         <a href="{{ route('anggota.show', $value->id) }}" class="btn btn-small btn-info">Detail</a>
                         <a href="{{ route('anggota.edit', $value->id) }}" class="btn btn-small btn-success">Edit</a>
-                      <a href="" type="sumbit" class="btn btn-small btn-danger" data-toggle="modal" data-target="#exampleModal">hapus</a>
+                      <a href="" type="submit" class="btn btn-small btn-danger" data-toggle="modal" data-target="#exampleModal">Delete</a>
                         </td>
                     </tr>
-                    @endforeach
-                    </tbody>
-                    <tfoot>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-</div>
-<div class="modal" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    </div>
+            <div class="modal" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -105,6 +89,24 @@
                 </div>
               </div>
             </div>
+</div>
+                @endforeach
+                    </tbody>
+                    <tfoot>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
 @endsection
 @push('script')
 <!-- DataTables  & Plugins -->
